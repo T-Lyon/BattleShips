@@ -38,7 +38,7 @@ function placeShips() {
     }
 }
 
-
+//Funktion som placerar ut båtar på de koordinater som angetts av spelaren. Alla båtar har en liknande funktion.
 function placeShipsDestroyer(){
     console.log ("placeShipsDestroyer");
 
@@ -141,14 +141,6 @@ function placeShipsSubmarine(){
             y2 = Number(document.getElementById("y-coord2").value);
             if (submarineCounter < 1) {
 
-                
-                // Lägger in ikonen för båten på de tidigare bestämda platserna
-                
-               // else if (checkPlacement(playermap, submarine, y, x)) {
-        
-                 //   alert('Du försöker placera en båt på en ruta/rutor där det redan finns ett skepp, försök igen.')
-        
-                //}
                 if (checkPlacement(playermap, x1, y1, x2, y2)) {
 
                     alert('Du försöker placera en båt på en ruta/rutor där det redan finns ett skepp, försök igen.')
