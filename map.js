@@ -381,6 +381,7 @@ if(destroyerarray.includes(arrayElement)){ //Letar i båtarrayen efter koordinat
         alert('Your boat is sunk')
 
 }
+///////////////////////////////////////////////////////////////// 
 }
 else if(submarinearray.includes(arrayElement)){
 
