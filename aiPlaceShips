@@ -1,0 +1,58 @@
+function aiPlaceShips(){
+
+    console.log ("aiPlaceShips is working")
+
+    while (destroyerCounter == 1){
+        positionRow = Math.floor((Math.random()*100) % length);
+        position1A = Math.floor((Math.random()*100) % width);
+
+        //för att inte få ett för stort skepp.
+        position1B = position1A + 2;
+        aimap[positionRow].fill("D",position1A,position1B);
+        destroyerCounter++;
+    }
+
+    while (submarineCounter == 1){
+        positionRow = Math.floor((Math.random()*100) % length);
+        position1A = Math.floor((Math.random()*100) % width);
+
+        //för att inte få ett för stort skepp.
+        position1B = position1A + 3;
+        aimap[positionRow].fill("S",position1A,position1B);
+        submarineCounter++;
+    }
+
+    while (cruiserCounter == 1){
+        positionRow = Math.floor((Math.random()*100) % length);
+        position1A = Math.floor((Math.random()*100) % width);
+
+        //för att inte få ett för stort skepp.
+        position1B = position1A + 4;
+        aimap[positionRow].fill("C",position1A,position1B);
+        cruiserCounter++;
+    }
+
+    while (battleshipCounter == 1){
+        positionRow = Math.floor((Math.random()*100) % length);
+        position1A = Math.floor((Math.random()*100) % width);
+
+        //för att inte få ett för stort skepp.
+        position1B = position1A + 5;
+        aimap[positionRow].fill("B",position1A,position1B);
+        battleshipCounter++;
+    }
+
+
+    /*
+    //Tar in x och koordinater för de rutor som skeppet ska vara i.
+    //skeppet kan högst bli tre "positioner" långt
+    positionRow = Math.floor((Math.random()*100) % length);
+    position1A = Math.floor((Math.random()*100) % width);
+
+    //för att inte få ett för stort skepp.
+    position1B = position1A + 2;
+
+
+    aimap[positionRow].fill("B",position1A,position1B+1);
+    */
+}
