@@ -1,5 +1,5 @@
 
-
+// Funktion som kollar ifall de rutor man angett redan är upptagna av andra båtar.
 function checkPlacement(playermap, x1, y1, x2, y2) {
     let counter = 0
     let length = x2+1
